@@ -15,8 +15,8 @@ def pig_latin(word)
         return word[3..-1] + word[0..2] + "ay"
       else
         return word[2..-1] + word[0..1] + "ay"
-    end
-  else 
+      end
+  else
     return word[1..-1] + word.chr + "ay"
   end
 end
