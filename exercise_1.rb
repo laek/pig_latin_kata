@@ -12,6 +12,11 @@
 
 def pig_latin(word)
 
+  if word.chr == "a" || word.chr == "e" || word.chr == "i" || word.chr == "o" || word.chr == "u"
+    return word + "way"
+  else
+    return word[1..-1] + word.chr + "ay"
+  end
 end
 
 ## Tests:
